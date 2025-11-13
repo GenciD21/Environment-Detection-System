@@ -73,31 +73,46 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 ---
 
-## ESP32 and BME280 
-  * I think this is an easier part that can be rushed - I mean, sensor interfacing and getting real world data is one the most exciting parts. However; previous attempts and easily interfacing with sensors can get messy for a number of reasons. I leading cause would obviously be imporper documenation, inexperience, etc, and therefore proper understanding of the BME280 and connection is necesasry for the project to succeed.
-       * General BME280 Overview:
-           * Physical/Electrical Characteristics:
-               * 1.71V to 3.6V(So 3.3V is more then enough)
-               * Extra Note: The PCB im using contaiend the decoupling capacitors necessary for us to do the protocols, otherwise I'd this here as well.
-           *  Sensor Interafacing General:
-               *  The Sensor Cotains 3 Modes: 2'b00 - Sleep Mode(Self Explanatory), 2'b01 - Forced Mode(Preform One Measurement, Store Result and Sleep), 2'b10 - Normal Mode (Perpetual Fetching of all Measurements, to be used mostly)
-               *  Genearl Note: during normal mode, we can actually disable temperature readings for specific measurements if we desire.
-               *  An important aspect of the BME280 is the IIR Filter - used mainly for pressure noise reduction because the external environment can quickly change it. There's a couple of modes we'll look into later
-               *  Because of the number of settings, the BME280 datasheet actually has predetermined settings(That we should configure, of course)! In this scenario of weather modeling, we'll be using the following:
-                 * Weather monitoring Setting:
-                     * Mode Settings: Forced, 1 sample / minute,
-                     * Over Sampling Settings: pressure ×1, temperature ×1, humidity ×1,
-                     * IIR Filter Settings: filter off
-                       
-           * Reading Data from the BME280:
-               * The datasheet recommends burst reading. meaning we sweep and read the range of register from 0x57 to 0x5E
-               * The pressure and temperature are read out in 20 bits unsigned, while the humidity is an unsigned 16-bit format for humidity. < Note, these values aren't are final resault and they must be calculate using compensation paramaters
-           *There's a lot of other compleixities, that go into the BME280. In our scenario, the ESP32IDF contains an API that allows us to connect our BME280 to read data via I2C, which is good in regards to the fact the compensation formulas are very complex.
-           *To the right contains the module for the bme280: https://components.espressif.com/components/espressif/bme280/versions/0.1.1/readme. In this cass we'll be in forced mode and can get any data at any point. 
+## ESP32 and BME280
+
+* I think this is an easier part that can be rushed - I mean, sensor interfacing and getting real world data is one the most exciting parts. However; previous attempts and easily interfacing with sensors can get messy for a number of reasons. I leading cause would obviously be imporper documenation, inexperience, etc, and therefore proper understanding of the BME280 and connection is necesasry for the project to succeed.
+
+### General BME280 Overview
+
+#### Physical/Electrical Characteristics
+* 1.71V to 3.6V (So 3.3V is more then enough)
+* Extra Note: The PCB im using contaiend the decoupling capacitors necessary for us to do the protocols, otherwise I'd this here as well.
+
+#### Sensor Interafacing General
+* The Sensor Cotains 3 Modes:
+  * 2'b00 - Sleep Mode (Self Explanatory)
+  * 2'b01 - Forced Mode (Preform One Measurement, Store Result and Sleep)
+  * 2'b10 - Normal Mode (Perpetual Fetching of all Measurements, to be used mostly)
+* General Note: during normal mode, we can actually disable temperature readings for specific measurements if we desire.
+* An important aspect of the BME280 is the IIR Filter - used mainly for pressure noise reduction because the external environment can quickly change it. There's a couple of modes we'll look into later.
+* Because of the number of settings, the BME280 datasheet actually has predetermined settings (That we should configure, of course)! In this scenario of weather modeling, we'll be using the following:
+
+##### Weather monitoring Setting
+* Mode Settings: Forced, 1 sample / minute
+* Over Sampling Settings: pressure ×1, temperature ×1, humidity ×1
+* IIR Filter Settings: filter off
+
+#### Reading Data from the BME280
+* The datasheet recommends burst reading, meaning we sweep and read the range of register from 0x57 to 0x5E.
+* The pressure and temperature are read out in 20 bits unsigned, while the humidity is an unsigned 16-bit format for humidity.
+  * Note: these values aren't the final result and they must be calculated using compensation paramaters.
+* There's a lot of other compleixities, that go into the BME280. In our scenario, the ESP32IDF contains an API that allows us to connect our BME280 to read data via I2C, which is good in regards to the fact the compensation formulas are very complex.
+* To the right contains the module for the bme280: [https://components.espressif.com/components/espressif/bme280/versions/0.1.1/readme](https://components.espressif.com/components/espressif/bme280/versions/0.1.1/readme)
+  * In this cass we'll be in forced mode and can get any data at any point.
+
+---
 
 ## ESP and TFT Display with LVGL
-  * Another important part of our program will be including the TFT Display and integrating it with ESP IDF. In this case we'll be using ILI9341 TFT Display with the ESP 32 IDF.
-  * With LVGL, we'll be interfacing our ILI9341 similarly like this example - [https://github.com/espressif/esp-idf/blob/release/v4.4/examples/peripherals/lcd/lvgl/main/lvgl_demo_ui.c](https://github.com/espressif/esp-idf/tree/d7ca8b94c852052e3bc33292287ef4dd62c9eeb1/examples/peripherals/lcd/spi_lcd_touch) 
+
+* Another important part of our program will be including the TFT Display and integrating it with ESP IDF. In this case we'll be using ILI9341 TFT Display with the ESP 32 IDF.
+* With LVGL, we'll be interfacing our ILI9341 similarly like this example:  
+  [https://github.com/espressif/esp-idf/blob/release/v4.4/examples/peripherals/lcd/lvgl/main/lvgl_demo_ui.c](https://github.com/espressif/esp-idf/tree/d7ca8b94c852052e3bc33292287ef4dd62c9eeb1/examples/peripherals/lcd/spi_lcd_touch)
+
 
 
 
@@ -109,6 +124,7 @@ It can be easy with a solid plan to go straight into programming - however not u
 *1. My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI. 
 
   
+
 
 
 
