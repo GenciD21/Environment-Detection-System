@@ -57,7 +57,12 @@ As mentioned earlier, the **BME280** is capable of reading **humidity**, **press
    I’ll need to explore this further, but it could be an interesting direction for the project.
 
 ### Top Level Overview of the ESP32, Sensor, Display, and Host:
+![Top Level Overview](overhead_graphic.png)
 
-### Circut and Pin Level Overview of the ESP32, Sensor, Display:
+### Circuit and Pin Level Overview of the ESP32, Sensor, Display:
+
+![Circuit and Pin Level Overview](pin_diagram.png)
+
+
 
 
