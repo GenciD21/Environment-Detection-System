@@ -67,11 +67,16 @@ As mentioned earlier, the **BME280** is capable of reading **humidity**, **press
 ---
 
 
-# Technical Talk with Peripherals and Host through ESP
+# Technical Talk with Peripherals and Host through ESP32
 
+It can be easy with a solid plan to go straight into programming - however not understanding some of the fundementals of how these components are connected leads to poor results later on. With the goal of this project being to sharpen my system design and embedded skills, we'll use part to discuss the technical aspect of the ESP connecting to the BME280, the algorithm involved in it, ESP32 and the LCD Display, as well as the ESP32/Host WebSocket Connection. 
 
+---
 
+## ESP32 and BME280 
+  * I think this is an easier part that can be rushed - I mean, sensor interfacing and getting real world data is one the most exciting parts. However; previous attempts and easily interfacing with sensors can get messy for a number of reasons. I leading cause would obviously be imporper documenation, inexperience, etc, and therefore proper understanding of the BME280 and connection is necesasry for the project to succeed.
 
+  
 
 
 
