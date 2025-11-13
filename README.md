@@ -84,12 +84,13 @@ It can be easy with a solid plan to go straight into programming - however not u
                *  Genearl Note: during normal mode, we can actually disable temperature readings for specific measurements if we desire.
                *  An important aspect of the BME280 is the IIR Filter - used mainly for pressure noise reduction because the external environment can quickly change it. There's a couple of modes we'll look into later
                *  Because of the number of settings, the BME280 datasheet actually has predetermined settings(That we should configure, of course)! In this scenario of weather modeling, we'll be using the following:
-                       * Weather monitoring Setting:
-                               * Mode Settings: Forced, 1 sample / minute,
-                               * Over Sampling Settings: pressure ×1, temperature ×1, humidity ×1,
-                               * IIR Filter Settings: filter off
+                 * Weather monitoring Setting:
+                     * Mode Settings: Forced, 1 sample / minute,
+                     * Over Sampling Settings: pressure ×1, temperature ×1, humidity ×1,
+                     * IIR Filter Settings: filter off
 
   
+
 
 
 
