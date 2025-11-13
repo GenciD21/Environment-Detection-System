@@ -55,3 +55,9 @@ As mentioned earlier, the **BME280** is capable of reading **humidity**, **press
 3. **Random Forest / XGBoost for Rainfall Prediction**  
    An idea inspired by ChatGPT — using ensemble models to predict rainfall or other weather events.  
    I’ll need to explore this further, but it could be an interesting direction for the project.
+
+### Top Level Overview of the ESP32, Sensor, Display, and Host:
+
+### Circut and Pin Level Overview of the ESP32, Sensor, Display:
+
+
