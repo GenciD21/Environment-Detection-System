@@ -64,8 +64,11 @@ As mentioned earlier, the **BME280** is capable of reading **humidity**, **press
 ![Circuit and Pin Level Overview](pin_diagram.png)
 
 
+---
 
-# Technical Specifications with Peripherals and Host Computer through ESP32
+
+# Technical Talk with Peripherals and Host through ESP
+
 
 
 
