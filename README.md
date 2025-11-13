@@ -15,7 +15,7 @@
  
 # Data Analysis Overview
 
- *As said previously, the BME280 is a pretty powerful controller in terms of its capability to read humdiity, pressure, and temperature data. This combination alone is enough to read alititude and possible even predict the weather! Here's some ideas for what can we predict
+*As said previously, the BME280 is a pretty powerful controller in terms of its capability to read humdiity, pressure, and temperature data. This combination alone is enough to read alititude and possible even predict the weather! Here's some ideas for what can we predict
   *Common Statistic Measurements that can be plotted and saved - I think this one is pretty basic but necessary before anything is done in a complicated manner. 
      *This includes the following:
         - Mean - 
@@ -32,6 +32,7 @@
 
   
         
+
 
 
 
