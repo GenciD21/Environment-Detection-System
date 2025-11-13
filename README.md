@@ -97,8 +97,22 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 ## ESP and TFT Display with LVGL
   * Another important part of our program will be including the TFT Display and integrating it with ESP IDF. In this case we'll be using ILI9341 TFT Display with the ESP 32 IDF.
+    
   * With LVGL, we'll be interfacing our ILI9341 similarly like this example - [https://github.com/espressif/esp-idf/blob/release/v4.4/examples/peripherals/lcd/lvgl/main/lvgl_demo_ui.c](https://github.com/espressif/esp-idf/tree/d7ca8b94c852052e3bc33292287ef4dd62c9eeb1/examples/peripherals/lcd/spi_lcd_touch)
-  * Another Important part of this will be the actual "graphics," there's a host of cool applications to make light weight UI for LVGL. An important note; however, is storage - I've ran into storage issues with this previously and you might want to have more than 2MB if you have a very big UI.
+    
+  * Another Important part of this will be the actual "graphics," there's a host of cool applications to make light weight UI for LVGL. An important note; however, is storage - I've ran into storage issues with this previously and you might want to have more than 2MB if you have a very big UI. In this, I'll likely be using SquareLine Studio - https://squareline.io/ - which has a free option(haha)!
+
+
+## ESP-32 and the Host Computer
+
+   * This is a pretty big change for me in terms of embedded projects. Previously, I'd connect my ESP and host computer to a DB with AWS or Azure and stream data with it as a middle man. There's a couple of issues with those; however,
+     * Cost: Having to set up any sort of cloud server costs money, and I lost all my Azure credits.
+     * Speed: If we want to stream a lot of data, it's possible that we'll get rate limited. Chances are unlikely, but it's still a part of it.
+     * Open Source/Working within your own means: I'm a big believer in open source technology. AWS and other services are pretty essential for modern internet life, but in this case there is many alternatives.
+    
+##So what are we going to do?
+
+   *My initial plan is use to the ESP-32 as a webserver in order to server data that can be parsed by our host computer. I think an important 
 
 
 
@@ -110,6 +124,7 @@ It can be easy with a solid plan to go straight into programming - however not u
 *1. My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI. 
 
   
+
 
 
 
