@@ -96,7 +96,7 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 ##ESP and TFT Display with LVGL
   * Another important part of our program will be including the TFT Display and integrating it with ESP IDF. In this case we'll be using ILI9341 TFT Display with the ESP 32 IDF.
-    * With LVGL, we'll be interfacing our ILI9341 similarly like this example - https://github.com/espressif/esp-idf/blob/release/v4.4/examples/peripherals/lcd/lvgl/main/lvgl_demo_ui.c 
+    * With LVGL, we'll be interfacing our ILI9341 similarly like this example - [https://github.com/espressif/esp-idf/blob/release/v4.4/examples/peripherals/lcd/lvgl/main/lvgl_demo_ui.c](https://github.com/espressif/esp-idf/tree/d7ca8b94c852052e3bc33292287ef4dd62c9eeb1/examples/peripherals/lcd/spi_lcd_touch) 
 
 
 
@@ -105,9 +105,10 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 ---
 
-*1. My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and I2C. 
+*1. My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI. 
 
   
+
 
 
 
