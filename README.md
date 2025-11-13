@@ -75,8 +75,22 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 ## ESP32 and BME280 
   * I think this is an easier part that can be rushed - I mean, sensor interfacing and getting real world data is one the most exciting parts. However; previous attempts and easily interfacing with sensors can get messy for a number of reasons. I leading cause would obviously be imporper documenation, inexperience, etc, and therefore proper understanding of the BME280 and connection is necesasry for the project to succeed.
+       * General BME280 Overview:
+           * Physical/Electrical Characteristics:
+               * 1.71V to 3.6V(So 3.3V is more then enough)
+               * Extra Note: The PCB im using contaiend the decoupling capacitors necessary for us to do the protocols, otherwise I'd this here as well.
+           *  Sensor Interafacing General:
+               *  The Sensor Cotains 3 Modes: 2'b00 - Sleep Mode(Self Explanatory), 2'b01 - Forced Mode(Preform One Measurement, Store Result and Sleep), 2'b10 - Normal Mode (Perpetual Fetching of all Measurements, to be used mostly)
+               *  Genearl Note: during normal mode, we can actually disable temperature readings for specific measurements if we desire.
+               *  An important aspect of the BME280 is the IIR Filter - used mainly for pressure noise reduction because the external environment can quickly change it. There's a couple of modes we'll look into later
+               *  Because of the number of settings, the BME280 datasheet actually has predetermined settings(That we should configure, of course)! In this scenario of weather modeling, we'll be using the following:
+                       *Weather monitoring forced mode,
+                               *Mode Settings:Forced, 1 sample / minute,
+                               *Over Sampling Settings: pressure ×1, temperature ×1, humidity ×1,
+                               *IIR Filter Settings: filter off
 
   
+
 
 
 
