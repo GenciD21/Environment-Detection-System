@@ -110,7 +110,7 @@ It can be easy with a solid plan to go straight into programming - however not u
      * Speed: If we want to stream a lot of data, it's possible that we'll get rate limited. Chances are unlikely, but it's still a part of it.
      * Open Source/Working within your own means: I'm a big believer in open source technology. AWS and other services are pretty essential for modern internet life, but in this case there is many alternatives.
     
-##So what are we going to do?
+   ##So what are we going to do?
 
    *My initial plan is use to the ESP-32 as a webserver in order to server data that can be parsed by our host computer. I think an important 
 
@@ -124,6 +124,7 @@ It can be easy with a solid plan to go straight into programming - however not u
   *1. My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI. 
 
   
+
 
 
 
