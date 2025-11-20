@@ -121,9 +121,10 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 ---
 
-*1. My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI. 
+  *1. My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI. 
 
   
+
 
 
 
