@@ -115,12 +115,10 @@ It can be easy with a solid plan to go straight into programming - however not u
    *My initial plan is use to the ESP-32 as a webserver in order to server data that can be parsed by our host computer. I think an important 
 
 ## Revision Section
-
----
-
-  *1. My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI. 
+   * 1. My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI. 
 
   
+
 
 
 
