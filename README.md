@@ -103,6 +103,7 @@ It can be easy with a solid plan to go straight into programming - however not u
   * Another Important part of this will be the actual "graphics," there's a host of cool applications to make light weight UI for LVGL. An important note; however, is storage - I've ran into storage issues with this previously and you might want to have more than 2MB if you have a very big UI. In this, I'll likely be using SquareLine Studio - https://squareline.io/ - which has a free option(haha)!
 
 
+
 ## ESP-32 and the Host Computer
 
    * This is a pretty big change for me in terms of embedded projects. Previously, I'd connect my ESP and host computer to a DB with AWS or Azure and stream data with it as a middle man. There's a couple of issues with those; however,
@@ -112,12 +113,13 @@ It can be easy with a solid plan to go straight into programming - however not u
     
    ##So what are we going to do?
 
-   *My initial plan is use to the ESP-32 as a webserver in order to server data that can be parsed by our host computer. I think an important 
+   *My initial plan is use to the ESP-32 as a webserver in order to server data that can be parsed by our host computer. This isn't a terrible idea actually, because it means we can switch between a "local" and a "cloud" mode. Local mode would allow access to 
 
 ## Revision Section
-   * 1. My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI. 
+   *  My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI.
 
   
+
 
 
 
