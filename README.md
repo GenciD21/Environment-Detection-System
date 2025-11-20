@@ -118,15 +118,16 @@ It can be easy with a solid plan to go straight into programming - however not u
 ##Putting it together with Software - Setting up and Super Loops or RTOS
    * I think this is a pretty interesting part of the project that gets me tripped up. From previous experience, the utilization of RTOS scheduling seems resonable. I mean, it is a ESP32-S3 - a lot of the underlying utilizes(RTOS), so it makes sense that to some capacity we are using it in order to run our program. I'll like a "Super Loop" method that we'll act as a way to show the proccesses. In reality - will be using FreeRTOS tasks. The reason is even I "poll" or give lengthy wait times, there is no telling when, say, the cloud service takes a little longer, etc. I had a similar issue with a previous project and proepr implementation of RTOs will fix sending data over the web easier. 
 
-### Circuit and Pin Level Overview of the ESP32, Sensor, Display:
+### Software Overhead View:
 
-![Circuit and Pin Level Overview](OverHeadSoftare.drawio.png)
+![Software Overview](OverHeadSoftare.drawio.png)
 
 ## Revision Section
    *  My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI.
 
 
   
+
 
 
 
