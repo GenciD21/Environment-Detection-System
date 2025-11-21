@@ -27,9 +27,8 @@ This time, I want to improve my organization and planning skills to work more ef
 
 ### Other Peripherals
 
-- **16x2 I²C LCD Display:**  
-  A simple LCD will be used to display data locally.  
-  I originally planned to use an SPI TFT display, but decided to simplify the setup to focus on building a complete and functional system first.
+- **SPI TFT Display:**  
+  A SPI TFT Display with LVGL Will be used to interface the sensor data.
 
 ---
 
@@ -127,6 +126,7 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 
   
+
 
 
 
