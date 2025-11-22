@@ -35,8 +35,6 @@ With AI being a big part of any developer’s toolchain, I'm a personal believer
   This sensor is highly versatile and well-documented.  
   It will collect humidity, pressure, and temperature data, which the ESP32 will read via **SPI**, process, and package for transmission.
 
----
-
 ### Other Peripherals
 
 - **SPI TFT Display:**  
@@ -153,6 +151,7 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 
   
+
 
 
 
