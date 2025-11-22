@@ -118,11 +118,22 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 ![Software Overview](OverHeadSoftare.drawio.png)
 
+### Software/Tasks Loops Diagrams:
+
+
+
+
+# Creating the Host Interface:
+
+---
+   
+ 
 ## Revision Section
    *  My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI.
 
 
   
+
 
 
 
