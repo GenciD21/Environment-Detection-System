@@ -8,17 +8,19 @@ This time, I want to improve my organization and planning skills to work more ef
 
 ---
 
-## Goals
+# Goals
 
-  With AI being a big part of the any developers toolchain, I'm a personal believer that this is a good time for students to start focusing on the soft skills and planning necessary to create big projects. The reality is - I could've vibe coded a project like this in maybe a week given my previous background in a similar, but smaller project. However, my task in this project is less about having a "result" but moreso creating a sustainable architecture that can be flexible for any degree of sensor data.
-###(Current) Goals:
- *Publicly Document progress too promote open source project material.
- *Implement a sustainable embedded architecture that prioritizes planning, verification, and a solid foundation beyond functionality.
- *Work towards proper explanation of each topic as well as adequete graphics for many of the plans that are to be made.
- *Make sound engineering choices that take into the account each choices pros and cons(More on this later!)
+With AI being a big part of any developer’s toolchain, I'm a personal believer that this is a good time for students to start focusing on the soft skills and planning necessary to create big projects. The reality is — I could've vibe coded a project like this in maybe a week given my previous background in a similar, but smaller project. However, my task in this project is less about having a "result" but moreso creating a sustainable architecture that can be flexible for any degree of sensor data.
+
+## (Current) Goals
+- Publicly Document progress too promote open source project material.
+- Implement a sustainable embedded architecture that prioritizes planning, verification, and a solid foundation beyond functionality.
+- Work towards proper explanation of each topic as well as adequete graphics for many of the plans that are to be made.
+- Make sound engineering choices that take into the account each choices pros and cons (More on this later!)
+
 ---
 
-## Component Overview
+# Component Overview
 
 ### The ESP32 and BME280
 
@@ -151,6 +153,7 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 
   
+
 
 
 
