@@ -55,10 +55,7 @@ As mentioned earlier, the **BME280** is capable of reading **humidity**, **press
    An idea inspired by ChatGPT — using ensemble models to predict rainfall or other weather events.  
    I’ll need to explore this further, but it could be an interesting direction for the project.
 
-### Top Level Overview of the ESP32, Sensor, Display, and Host:
-![Top Level Overview](overhead_graphic.png)
-
-### Circuit and Pin Level Overview of the ESP32, Sensor, Display:
+### Circuit and Pin Level Overview of the ESP32, Sensor, Display(Now TFT):
 
 ![Circuit and Pin Level Overview](pin_diagram.png)
 
@@ -126,6 +123,7 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 
   
+
 
 
 
