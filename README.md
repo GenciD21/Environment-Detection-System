@@ -52,7 +52,7 @@ With AI being a big part of any developer’s toolchain, I'm a personal believer
 
 # Technical Talk with Peripherals and Host through ESP32
 
-###It can be easy with a solid plan to go straight into programming - however, it's important to know some aspects of the components to each hardware component we'll be using in order to suit our needs. 
+   It can be easy with a solid plan to go straight into programming - however, it's important to know some aspects of the components to each hardware component we'll be using in order to suit our needs. 
 
 ---
 
@@ -129,6 +129,7 @@ With AI being a big part of any developer’s toolchain, I'm a personal believer
 
 
   
+
 
 
 
