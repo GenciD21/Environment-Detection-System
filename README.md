@@ -1,11 +1,22 @@
 # Environmental Detection Systems Overview
 
-In this project, the goal is to create an IoT device that interfaces primarily with the **BME280 Sensor** to measure a combination of **humidity**, **pressure**, and **temperature**.  
+In this project, the technical goal is to create an IoT device that interfaces primarily with the **BME280 Sensor** to measure a combination of **humidity**, **pressure**, and **temperature**.  
 The data will be streamed over the web to a host computer that will process it accordingly.
 
 I'm writing this document because I often get stuck as projects grow larger and more complex.  
 This time, I want to improve my organization and planning skills to work more efficiently.
 
+---
+
+## Goals
+
+  With AI being a big part of the any developers toolchain, I'm a personal believer that this is a good time for students to start focusing on the soft skills and planning necessary to create big projects. The reality is - I could've vibe coded a project like this in maybe a week given my previous background in a similar, but smaller project. However, my task in this project is less about having a "result" but moreso creating a sustainable architecture that can be flexible for any degree of sensor data.
+
+  ###(Current) Goals:
+    *Publicly Document progress too promote open source project material.
+    *Implement a sustainable embedded architecture that prioritizes planning, verification, and a solid foundation beyond functionality.
+    *Work towards proper explanation of each topic as well as adequete graphics for many of the plans that are to be made.
+    *Make sound engineering choices that take into the account each choices pros and cons(More on this later!)
 ---
 
 ## Component Overview
@@ -108,8 +119,8 @@ It can be easy with a solid plan to go straight into programming - however not u
      * Cost: Having to set up any sort of cloud server costs money, and I lost all my Azure credits.
      * Speed: If we want to stream a lot of data, it's possible that we'll get rate limited. Chances are unlikely, but it's still a part of it.
      * Open Source/Working within your own means: I'm a big believer in open source technology. AWS and other services are pretty essential for modern internet life, but in this case there is many alternatives.
-    
-   ##So what are we going to do?
+
+##So what are we going to do?
 
    *My initial plan is use to the ESP-32 as a webserver in order to server data that can be parsed by our host computer. This isn't a terrible idea actually, because it means we can switch between a "local" and a "cloud" mode. Local mode would allow for faster access when on the local network, while we'll likely use another cloud service for over the web. This means we'll have to utilize websockets and a cloiudserver for this task, as well as have a way to modify the networking mode via a push button.  
 
@@ -126,15 +137,22 @@ It can be easy with a solid plan to go straight into programming - however not u
 
 
 # Creating the Host Interface:
-
 ---
+
+* Another Important aspect of this project is making software on my computer that easily allows me to fetch and analyze the data. My only spite of previous projects is that I would tend to do this in one language, but it's common that a suite of software may utilize multiple(!) langauges to create an entire suite of software. Therefore I'll likely be utilzing both C++ and Python for this project. C++ will be utilzied for fetching and efficiently storing data quickly, while Python will read this data(say a file) plot and analyze it.
+
+* C++/Data Collection:
+  
+  * An important part of the C++ Program in this case is being able not only to package data and write data properly but knowing when to recieve data from the cloud or locally. This is an important aspect that may take some consideration. However, a smart plan may be 
    
  
 ## Revision Section
    *  My original plan was to use a LCD Display with I2C and BME280 with I2C, I"m changing that to using a TFT Display with LVGL and SPI.
+   *  Added a goals section
 
 
   
+
 
 
 
