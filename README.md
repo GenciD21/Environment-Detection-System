@@ -96,7 +96,7 @@ With AI being a big part of any developer’s toolchain, I'm a personal believer
      * Speed: If we want to stream a lot of data, it's possible that we'll get rate limited. Chances are unlikely, but it's still a part of it.
      * Open Source/Working within your own means: I'm a big believer in open source technology. AWS and other services are pretty essential for modern internet life, but in this case there is many alternatives.
 
-##So what are we going to do?
+So what are we going to do?
 
    *My initial plan is use to the ESP-32 as a webserver in order to server data that can be parsed by our host computer. This isn't a terrible idea actually, because it means we can switch between a "local" and a "cloud" mode. Local mode would allow for faster access when on the local network, while we'll likely use another cloud service for over the web. This means we'll have to utilize websockets and a cloiudserver for this task, as well as have a way to modify the networking mode via a push button.  
 
@@ -129,6 +129,7 @@ With AI being a big part of any developer’s toolchain, I'm a personal believer
 
 
   
+
 
 
 
