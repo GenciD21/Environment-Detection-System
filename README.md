@@ -42,29 +42,6 @@ With AI being a big part of any developer’s toolchain, I'm a personal believer
 
 ---
 
-## Data Analysis Overview
-
-As mentioned earlier, the **BME280** is capable of reading **humidity**, **pressure**, and **temperature** — a combination powerful enough to estimate **altitude** and even **predict short-term weather trends**.
-
-### Ideas for Data Analysis
-
-1. **Basic Statistical Measurements**  
-   These will be plotted and stored before doing more complex analysis:  
-   - Mean  
-   - Median  
-   - Mode *(less relevant due to data variability)*  
-   - Range  
-   - Variance  
-   - Standard Deviation  
-
-2. **Linear Regression**  
-   Use linear regression to predict future temperature, pressure, and humidity.  
-   This is a good starting point for modeling and pattern recognition with sensor data.
-
-3. **Random Forest / XGBoost for Rainfall Prediction**  
-   An idea inspired by ChatGPT — using ensemble models to predict rainfall or other weather events.  
-   I’ll need to explore this further, but it could be an interesting direction for the project.
-
 ### Circuit and Pin Level Overview of the ESP32, Sensor, Display(Now TFT):
 
 ![Circuit and Pin Level Overview](pin_diagram.png)
@@ -150,7 +127,9 @@ It can be easy with a solid plan to go straight into programming - however not u
    *  Added a goals section
 
 
+
   
+
 
 
 
