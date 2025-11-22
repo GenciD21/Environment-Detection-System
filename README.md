@@ -98,7 +98,7 @@ With AI being a big part of any developer’s toolchain, I'm a personal believer
 
 So what are we going to do?
 
-   *My initial plan is use to the ESP-32 as a webserver in order to server data that can be parsed by our host computer. This isn't a terrible idea actually, because it means we can switch between a "local" and a "cloud" mode. Local mode would allow for faster access when on the local network, while we'll likely use another cloud service for over the web. This means we'll have to utilize websockets and a cloiudserver for this task, as well as have a way to modify the networking mode via a push button.  
+   My initial plan is use to the ESP-32 as a webserver in order to server data that can be parsed by our host computer. This isn't a terrible idea actually, because it means we can switch between a "local" and a "cloud" mode. Local mode would allow for faster access when on the local network, while we'll likely use another cloud service for over the web. This means we'll have to utilize websockets and a cloiudserver for this task, as well as have a way to modify the networking mode via a push button.  
 
 ## Putting it together with Software - Setting up and Super Loops or RTOS
    * I think this is a pretty interesting part of the project that gets me tripped up. From previous experience, the utilization of RTOS scheduling seems resonable. I mean, it is a ESP32-S3 - a lot of the underlying utilizes(RTOS), so it makes sense that to some capacity we are using it in order to run our program. I'll like a "Super Loop" method that we'll act as a way to show the proccesses. In reality - will be using FreeRTOS tasks. The reason is even I "poll" or give lengthy wait times, there is no telling when, say, the cloud service takes a little longer, etc. I had a similar issue with a previous project and proepr implementation of RTOs will fix sending data over the web easier. 
@@ -129,6 +129,7 @@ So what are we going to do?
 
 
   
+
 
 
 
