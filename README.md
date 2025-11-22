@@ -57,7 +57,7 @@ With AI being a big part of any developer’s toolchain, I'm a personal believer
 ---
 
 ## ESP32 and BME280 
-  * I think this is an easier part that can be rushed - I mean, sensor interfacing and getting real world data is one the most exciting parts. However; previous attempts and easily interfacing with sensors can get messy for a number of reasons. I leading cause would obviously be imporper documenation, inexperience, etc, and therefore proper understanding of the BME280 and connection is necesasry for the project to succeed.
+  * I think this is an easier part that can be rushed - I mean, sensor interfacing and getting real world data is one the most exciting parts. However; previous attempts and easily interfacing with sensors can get messy for a number of reasons. I think a big reason for me has been not taking the time to understand the underlying sensor. While we'll be easily interface with the BME280 this time(because of a public library), below is some characteristics I've found important for now.
        * General BME280 Overview:
            * Physical/Electrical Characteristics:
                * 1.71V to 3.6V(So 3.3V is more then enough)
@@ -76,7 +76,7 @@ With AI being a big part of any developer’s toolchain, I'm a personal believer
                * The datasheet recommends burst reading. meaning we sweep and read the range of register from 0x57 to 0x5E
                * The pressure and temperature are read out in 20 bits unsigned, while the humidity is an unsigned 16-bit format for humidity. < Note, these values aren't are final resault and they must be calculate using compensation paramaters
                  
-           *There's a lot of other compleixities, that go into the BME280. In our scenario, the ESP32IDF contains an API that allows us to connect our BME280 to read data via I2C, which is good in regards to the fact the compensation formulas are very complex.
+           *There's a lot of other compleixities, that go into the BME280. In our scenario, the ESP32IDF contains an API that allows us to connect our BME280 to read data via I2C, which is good in regards to the fact the compensation formulas are very complex(and annoying).
 
            *To the right contains the module for the bme280: https://components.espressif.com/components/espressif/bme280/versions/0.1.1/readme. In this cass we'll be in forced mode and can get any data at any point. 
 
@@ -129,6 +129,7 @@ With AI being a big part of any developer’s toolchain, I'm a personal believer
 
 
   
+
 
 
 
